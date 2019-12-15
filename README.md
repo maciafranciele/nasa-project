@@ -1,5 +1,6 @@
 # nasa-project
 
+
 **Qual o objetivo do comando cache​ ​em Spark?**
 
 Em um job Spark, muitas vezes reutilizamos o mesmo objeto (Dataframe, tabela ou RDD) para diferentes transformações. O cache do spark é utilizado para otimizar o processamento. Ele coloca o objeto em um armazenamento temporário (memória ou disco) dos executors, tornando as releituras mais rápidas. 
