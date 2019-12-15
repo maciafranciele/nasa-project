@@ -36,59 +36,49 @@ depois está definindo que as linhas dos arquivos são divididas com espaço, ge
 **Desafio:HTTP​ ​requests​ ​to​ ​the​ ​NASA​ ​Kennedy​ ​Space​ ​Center​ ​WWW​ ​server**
 
 Questão1: Número de hosts únicos.
-+-----------+
-|count(host)|
-+-----------+
-|     137933|
-+-----------+
+
+| qty_host_unicos 	|
+|-----------------	|
+| 137933          	|
 
 Questão2: O total de erros 404.
 R: 20899
 
 Questão3:Os 5 URLs que mais causaram erro 404.
-+--------------------+-----+
-|            endpoint|count|
-+--------------------+-----+
-|/pub/winvn/readme...| 2004|
-|/pub/winvn/releas...| 1732|
-|/shuttle/missions...|  683|
-|/shuttle/missions...|  428|
-|/history/apollo/a...|  384|
-+--------------------+-----+
+
+| endpoint             	| count 	|
+|----------------------	|-------	|
+| /pub/winvn/readme... 	| 2004  	|
+| /pub/winvn/releas... 	| 1732  	|
+| /shuttle/missions... 	| 683   	|
+| /shuttle/missions... 	| 428   	|
+| /history/apollo/a... 	| 384   	|
 
 Questão4:Quantidade de erros 404 por dia.
-+--------------------+-----+
-|           timestamp|count|
-+--------------------+-----+
-|04/Aug/1995:14:53...|    1|
-|06/Aug/1995:02:38...|    1|
-|07/Aug/1995:01:57...|    1|
-|07/Aug/1995:09:25...|    1|
-|07/Aug/1995:09:58...|    1|
-|07/Aug/1995:13:12...|    1|
-|08/Aug/1995:02:40...|    1|
-|08/Aug/1995:16:06...|    1|
-|09/Aug/1995:09:02...|    1|
-|09/Aug/1995:15:24...|    2|
-|09/Aug/1995:16:12...|    1|
-|10/Aug/1995:13:55...|    1|
-|11/Aug/1995:07:28...|    1|
-|11/Aug/1995:15:53...|    1|
-|12/Aug/1995:08:13...|    1|
-|13/Aug/1995:20:07...|    1|
-|14/Aug/1995:13:01...|    1|
-|14/Aug/1995:17:52...|    1|
-|15/Aug/1995:10:19...|    1|
-|15/Aug/1995:10:37...|    1|
-+--------------------+-----+
+
+| timestamp            	| count 	|
+|----------------------	|-------	|
+| 04/Aug/1995:14:53... 	| 1     	|
+| 06/Aug/1995:02:38... 	| 1     	|
+| 07/Aug/1995:01:57... 	| 1     	|
+| 07/Aug/1995:09:25... 	| 1     	|
+| 07/Aug/1995:09:58... 	| 1     	|
+| 07/Aug/1995:13:12... 	| 1     	|
+| 08/Aug/1995:02:40... 	| 1     	|
+| 08/Aug/1995:16:06... 	| 1     	|
+| 09/Aug/1995:09:02... 	| 1     	|
+| 09/Aug/1995:15:24... 	| 2     	|
+| 09/Aug/1995:16:12... 	| 1     	|
+| 10/Aug/1995:13:55... 	| 1     	|
+| 11/Aug/1995:07:28... 	| 1     	|
+| 11/Aug/1995:15:53... 	| 1     	|
 only showing top 20 rows
 
 Questão5:O total de bytes retornados.
-+-----------------+
-|sum(content_size)|
-+-----------------+
-|      65524314915|
-+-----------------+
+
+| sum(content_size) 	|
+|-------------------	|
+| 65524314915       	|
 
 **Script Pyspark:**
 /spark/nasa_project.py
